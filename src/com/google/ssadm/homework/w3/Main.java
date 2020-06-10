@@ -14,7 +14,7 @@ public class Main {
         if(sc.hasNextDouble()){
             r = sc.nextDouble();
             c = 2*Math.PI*r;
-            System.out.printf("Сircle length with radius %f is %f", r, c);
+            System.out.printf("Circle length with radius %f is %f", r, c);
 
         } else {
             System.out.println("You entered the wrong data, try again.");
