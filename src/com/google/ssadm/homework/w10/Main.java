@@ -24,6 +24,6 @@ public class Main {
             }
         } else {
             System.out.println("Incorrect input");
-        };
+        }
     }
 }

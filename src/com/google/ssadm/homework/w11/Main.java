@@ -14,9 +14,9 @@ public class Main {
         String str = scan.nextLine();
         if (str.matches("\\d{6}")) {
             if(str.equals(new StringBuilder(str).reverse().toString())){
-                System.out.printf("%s is palindrome %n", str);
+                System.out.printf("%s is palindrome", str);
             } else {
-                System.out.printf("%s is not a palindrome %n", str);
+                System.out.printf("%s is not a palindrome", str);
             }
         } else {
             System.out.println("Incorrect input");
