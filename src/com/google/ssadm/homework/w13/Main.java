@@ -7,7 +7,7 @@ package com.google.ssadm.homework.w13;
 import java.math.BigInteger;
 import java.util.Scanner;
 import java.util.stream.IntStream;
-
+//Java 14 case stile
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
