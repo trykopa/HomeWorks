@@ -13,8 +13,9 @@ public class Main {
     public static void main(String[] args) {
 
         int[] array = new int[10];
+        //elem - number to search in array
         int elem = 0;
-
+        //Fill the array with random integers from 0 to 10
         Arrays.setAll(array, i -> ThreadLocalRandom.current().nextInt(0, 10 + 1));
         System.out.println("We have the following array: " + Arrays.toString(array));
 
@@ -24,10 +25,14 @@ public class Main {
 
         ArrayList<Integer> myList = findAllElements(array, elem);
         if(myList.toArray().length>1){
-            System.out.println("Element found more than one time on indexes: " + Arrays.toString(myList.toArray()));
+            System.out.println(
+                    "Element found more than one time on indexes: "
+                    + Arrays.toString(myList.toArray())
+            );
         }
     }
 
+    //method to find first index of required element in array
     private static int findFirstElement(int[] array, int elem) {
         int index = -1;
         for(int i = 0; i < array.length - 1; i++){
@@ -38,6 +43,7 @@ public class Main {
         return index;
     }
 
+    //method to find all indexes of required element in array
     private static ArrayList<Integer> findAllElements(int[] array, int elem) {
         ArrayList<Integer> myList = new ArrayList<>();
         for(int i = 0; i < array.length - 1; i++){

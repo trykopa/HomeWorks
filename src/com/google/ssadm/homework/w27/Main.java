@@ -14,7 +14,9 @@ public class Main {
         System.out.println(concatIntDoubleString(i, a, myString));
     }
 
-    private static String concatIntDoubleString(int i, double a, String myString) {
+    private static String concatIntDoubleString(
+            int i, double a, String myString
+    ) {
         return myString + (i + a);
     }
 }
