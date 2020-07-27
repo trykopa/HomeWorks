@@ -74,8 +74,8 @@ rectangles are entered from the keyboard. For example, below is a rectangle
 with a height of 4 and a width of 5.
 <pre>
 @@@@@
-@ @
-@ @
+@   @
+@   @
 @@@@@
 </pre>
 
