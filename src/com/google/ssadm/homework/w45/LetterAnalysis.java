@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class LetterAnalysis {
     public static String file = "src/com/google/ssadm/homework/w45/input.txt";
@@ -22,17 +23,17 @@ public class LetterAnalysis {
                         v -> 1 ,
                         Integer::sum
                 ));
+        // we can't sort HashMap by value, and we use List of values to sort and then to print Map "sorted by values"
         List<Integer> count = myMap.values().stream()
                 .sorted()
                 .collect(Collectors.toList());
-
-        for (int i = count.size() - 1; i >= 0; i--) {
-            for(var c: myMap.entrySet()){
-                if(count.get(i).equals(c.getValue())){
-                    System.out.println(c.getKey() + " " + c.getValue());
+        //this is not optimal solution, find your own :)
+        IntStream.iterate(count.size() - 1 , i -> i >= 0 , i -> i - 1)
+                .forEach(i -> myMap.forEach((key , value) -> {
+                    if (count.get(i).equals(value)) {
+                    System.out.println(key + " " + value);
                 }
-            }
-        }
+        }));
     }
 
     private static String getStringFromFile(String file) {
