@@ -53,7 +53,7 @@ Check if it is a palindrome. Note: palindrome is called
 a number, word or text that is read equally from left to right and right
 left. For example, these are the numbers 143341, 5555, 7117, etc.
 
-**w12) * Draw "wallpaper" using loops.
+**w12)** Draw "wallpaper" using loops.
 Moreover, the number of bands must be entered from the keyboard.
 There are 7 stripes in the example. \
 --- +++ --- +++ --- +++ --- \
