@@ -20,7 +20,7 @@ public class Main {
 
         //deprecated methods
         Date monthBefore = new Date();
-        monthBefore.setMonth(monthBefore.getMonth()-1);
+        monthBefore.setMonth(currentDate.getMonth()-1);
         System.out.println(currentDate.getTime() - monthBefore.getTime());
 
         //use joda-time https://github.com/JodaOrg

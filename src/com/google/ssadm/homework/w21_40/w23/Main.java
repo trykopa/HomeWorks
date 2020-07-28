@@ -59,11 +59,12 @@ public class Main {
     }
 
     private static void printMatrix(int[][] myArray) {
-        for (int[] ints : myArray) {
+        for (int[] nums : myArray) {
             for (int j = 0; j < myArray.length; j++) {
-                System.out.print(ints[j] + " ");
+                System.out.print(nums[j] + " ");
             }
             System.out.println();
+
         }
     }
 }

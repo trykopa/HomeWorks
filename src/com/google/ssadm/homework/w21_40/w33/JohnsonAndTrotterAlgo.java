@@ -1,6 +1,5 @@
 package com.google.ssadm.homework.w21_40.w33;
 
-import java.lang.*;
 import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.stream.IntStream;
@@ -111,6 +110,3 @@ public class JohnsonAndTrotterAlgo{
     }
 
 }
-
-// This code is contributed by Sagar Shukla
-

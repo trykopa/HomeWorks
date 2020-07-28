@@ -17,9 +17,7 @@ public class Main {
             case 0 -> System.out.println("Factorial 0 is 1");
             case 1 -> System.out.println("Factorial 1 is 1");
             case 2 -> System.out.println("Factorial 2 is 2");
-            default -> {
-                System.out.printf("Factorial %d is %d", number, factorial(number));
-            }
+            default -> System.out.printf("Factorial %d is %d", number, factorial(number));
         }
     }
 

@@ -20,16 +20,14 @@ public class Main {
     }
 
     public static boolean isPrime(int check){
-        return !IntStream.rangeClosed(2, check / 2).anyMatch(i -> check % i == 0);
+        return IntStream.rangeClosed(2, check / 2).noneMatch(i -> check % i == 0);
     }
 
     public static boolean isPrime2(int check){
-        if (check == 2 || check == 3) {
-            return true;
-        } else {
+        if (check != 2 && check != 3) {
             for (int i = 2; i <= Math.sqrt(check); i++)
-                if(check%i==0) return false;
-            return true;
+                if (check % i == 0) return false;
         }
+        return true;
     }
 }

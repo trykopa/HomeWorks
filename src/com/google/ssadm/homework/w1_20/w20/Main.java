@@ -21,7 +21,7 @@ public class Main {
                 System.out.printf("Please enter %d element of myArray: %n", i);
                 myArray[i] = sc.nextInt();
             }
-            System.out.println(Arrays.toString(myArray));;
+            System.out.println(Arrays.toString(myArray));
         } else {
             System.out.println("Incorrect input");
         }
@@ -34,9 +34,7 @@ public class Main {
                     myArrayNew[i] = sc.nextInt();
                 });
 
-        Arrays.stream(myArrayNew).forEach(i ->{
-            System.out.print(i + "\t");
-        });
+        Arrays.stream(myArrayNew).forEach(i -> System.out.print(i + "\t"));
 
     }
 }

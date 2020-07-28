@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class LetterAnalysis {
-    public static String file = "src/com/google/ssadm/homework/w45/input.txt";
+    public static final String file = "src/com/google/ssadm/homework/w45/input.txt";
 
     public static void main(String[] args) {
         String result = getStringFromFile(file);
